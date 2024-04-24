@@ -5,6 +5,8 @@ import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import plu.capstone.playerpiano.addon.minecraftmod.command.ModCommands;
+import plu.capstone.playerpiano.addon.minecraftmod.piano.PianoWSClient;
 
 public class PianoMod implements ModInitializer {
 	// This logger is used to write text to the console and the log file.
@@ -21,6 +23,8 @@ public class PianoMod implements ModInitializer {
 		// Proceed with mild caution.
 
 		LOGGER.info("Hello Fabric world!");
+
+        ModCommands.registerModCommands();
 
         try {
             wsClient = new PianoWSClient("ws://localhost:8898/ws");
