@@ -30,7 +30,10 @@ bin/
 
 # fabric
 
-run/
+!run/
+run/*
+!run/saves/
+!run/mods/
 
 # java
 
