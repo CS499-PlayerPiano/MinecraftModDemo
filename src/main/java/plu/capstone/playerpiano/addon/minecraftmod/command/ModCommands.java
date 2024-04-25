@@ -11,6 +11,8 @@ public class ModCommands {
         CommandRegistrationCallback.EVENT.register((dispatcher, registryAccess, environment) -> {
             TestCommand.register(dispatcher);
             PauseUnpauseCommand.register(dispatcher);
+            SkipCommand.register(dispatcher);
+            PlaySongCommand.register(dispatcher);
         });
     }
 
